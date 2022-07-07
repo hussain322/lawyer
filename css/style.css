@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-transform: uppercase;
+    color: #28377e;
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #28377e;   
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero{
+    background: url(../images/hero_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1{  
+    font-weight: bold;   
+    text-transform: uppercase;  
+    color: white;
+    font-size: 50px;
+}
+
+.hero-content{
+    min-height: 88vh;
+    align-items: center;
+}
+
+.who_we_are{
+    padding: 100px 0;
+}
+
+.who_we_are_content span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #f05428;
+}
+
+.who_we_are_content p{
+    color: #b0b0b1;
+}
+
+.what_we_do{
+    background-color: #f7f8f8;
+    padding: 100px;
+    background-image: url(../images/what_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 80%;
+}
+
+.what_we_do span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #f05428;
+    margin: auto;
+}
+
+.what_item{
+    position: relative;
+}
+
+.what_item img{
+    width: 100%;
+}
+
+.what_item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+0,28377e+50,28377e+50&0+0,1+90 */
+background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(40,55,126,0.56) 50%, rgba(40,55,126,1) 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(40,55,126,0.56) 50%,rgba(40,55,126,1) 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40,55,126,0.56) 50%,rgba(40,55,126,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+
+    transition: .4s all ease-in-out;
+
+}
+
+.what_item:hover::before{
+    height: 100%;
+}
+
+.what_content{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.what_item:hover .what_content{
+    opacity: 1;
+    top: 50%;
+}
+.what_content h6{
+    color: #fff;
+    font-size: 25px;
+}
+
+.what_icon{
+    position: absolute;
+    left: 40%;
+    bottom: 80px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.what_item:hover .what_icon{
+    opacity: 1;
+    left: 50%;
+}
+
+.what_icon i{
+    color: #fff;
+    font-size: 20px;
+}
+
+.our_attor{
+    background-image: url(../images/attorney_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.attor_content{
+    padding: 100px 0;
+}
+
+.our_attor span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #f05428;
+}
+
+.our_attor h2{
+    color: #fff;
+}
+
+.our_attor p{
+    color: #929dcf;
+}
+
+.our_attor a{
+    color: #f05428;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.attor_item{
+    position: relative;
+}
+
+.attor_item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,28377e+2,28377e+4,28377e+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(40,55,126,0.02) 2%, rgba(40,55,126,0.04) 4%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(40,55,126,0.02) 2%,rgba(40,55,126,0.04) 4%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(40,55,126,0.02) 2%,rgba(40,55,126,0.04) 4%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+    transition: .4s all ease-in-out;
+
+}
+
+.attor_item:hover::before{
+    height: 50%;
+}
+
+.attor_item img{
+    width: 100%;
+}
+
+.attor_item_content{
+    position: absolute;
+    left: 10%;
+    bottom: 80px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.attor_item:hover .attor_item_content{
+    opacity: 1;
+    bottom: 100px;
+}
+
+.attor_item_content h6{
+    color: #fff;
+    font-size: 25px;
+}
+
+.language{
+    padding: 100px 0;
+}
+
+.language span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #f05428;
+    margin: auto;
+}
+
+.language_content{
+    padding: 35px 15px;
+}
+.language_content h5{
+    color: #28377e;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.language_content p{
+    color: #929dcf;
+}
+.language_content a{
+    color: #f05428;
+    text-decoration: none;
+}
+
+
+.contact{
+    padding: 100px 0;
+    background-color: #28377e;
+}
+.contact_us span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #f05428;
+    margin: auto;
+}
+
+.contact_us h2{
+    color: #fff;
+}
+
+.contact_form input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #929dcf;
+    border-radius: 1px;
+}
+
+.contact_form input::placeholder{
+    color: #fff;
+}
+
+.send{
+    text-align: center;
+}
+
+.send input{
+    background-color: #f05428;
+    padding: 8px 60px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+footer{
+    background: #0c1234;
+    padding: 10px 0;
+}
+
+.footer_content p{
+    color: #929dcf;
+}
+
+.footer_icon{
+   padding-top: 20px;
+}
+.footer_icon ul{
+    list-style: none;  
+    display: flex;
+    justify-content: end;
+}
+.footer_icon li {
+    margin-left: 20px;
+}
+
+.footer_icon a{
+    color: #929dcf;
+}
+
+.footer_paragraph{
+    padding-top: 20px;
+}
